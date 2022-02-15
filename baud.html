@@ -1,0 +1,32 @@
+<html> <head> <meta http-equiv=origin-trial content=AojZmd4/S5LflshCTHFcBfmI2AtHi3DCXeFAOmKnavQv/SHn++bAAIrXsOYvljE8+x4hA7Y7eBsG4wsdeiCL3gUAAABaeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWNocm9tZWxhYnMuZ2l0aHViLmlvOjQ0MyIsImZlYXR1cmUiOiJTZXJpYWwiLCJleHBpcnkiOjE2MDk5NjkyOTF9> <meta http-equiv=origin-trial content="AoLqJ/M7mlzNMhdnChuGKWNHN309kSXb9eegrI6hM8LwenlK/iFr2TgQCrYABJX0R+/EoZKK0j/HGLOXvL8wqAoAAABJeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJmZWF0dXJlIjoiU2VyaWFsIiwiZXhwaXJ5IjoxNjA5OTY5MzE3fQ=="> <style>body{padding:0;margin:0}*{box-sizing:border-box}#terminal{height:0vh}.options{height:10vh;padding:15px}</style> </head> <body> <div class=options> <label for=ports>Port:</label> <select id=ports> <option value=prompt>Add a port...</option> </select> <button id=connect>Connect</button> <label for=baudrate>Baud rate:</label> <select id=baudrate> <option value=9600>9600</option> <option value=14400>14400</option> <option value=19200>19220</option> <option value=28800>28800</option> <option value=38400>38400</option> <option value=57600>57600</option> <option value=115200 selected=selected>115200</option> <option value=custom>Custom</option> </select> <br> <input id=custom_baudrate type=number min=1 placeholder="Enter baudrate..." hidden> <label for=databits>Data bits:</label> <select id=databits> <option value=7>7</option> <option value=8 selected=selected>8</option> </select> <label for=parity>Parity:</label> <select id=parity> <option value=none selected=selected>None</option> <option value=even>Even</option> <option value=odd>Odd</option> </select> <label for=stopbits>Stop bits:</label> <select id=stopbits> <option value=1 selected=selected>1</option> <option value=2>2</option> </select> <input id=rtscts type=checkbox> <label for=rtscts>Hardware flow control</label> <input id=echo type=checkbox> <label for=echo>Local echo</label> <input id=enter_flush type=checkbox> <label for=enter_flush>Flush on enter</label> <button id=download>Download output</button> </div> <div id=terminal></div> 
+
+<script type="text/javascript" src="runtime.js"></script>
+<script type="text/javascript" src="vendors.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<html>
+<head>
+
+</head>
+<body>
+<div id="chartContainer" style="height: 350px; width:80%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+
+<html>
+<body>
+<div id="OXY" style="height: 10px; width:80%;margin-right: -64%;margin-top: -12%;float: right;"></div>
+<div
+   style="
+      height: 10px; width:80%;margin-right: -66%;margin-top: -12%;float: right;">
+% Oxygen
+</div>
+<div id="BPM" style="height: 10px; width:80%;margin-right: -64%;margin-top: -8%;float: right;"></div>
+<div
+   style="
+      height: 10px; width:80%;margin-right: -66%;margin-top: -8%;float: right;">
+BPM
+</div>
+</body>
+</html>
